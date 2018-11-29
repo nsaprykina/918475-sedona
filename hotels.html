@@ -23,27 +23,42 @@
 					<h2 class="visually-hidden">Сортировка</h2>
 					<form class="hotel-filter-form" method="get" action="https://echo.htmlacademy.ru">
 						<fieldset class="hotel-filter-group">
-							<label class="hotel-filter-title">Инфраструктура:
-								<ul class="form-list">
-									<li class="form-item"><input type="checkbox" name="comfort" value="pool" checked>Бассейн</li>
-									<li class="form-item"><input type="checkbox" name="comfort" value="parking">Парковка</li>
-									<li class="form-item"><input type="checkbox" name="comfort" value="wi-fi">Wi-Fi</li>
-								</ul>
-							</label>
+							<label class="hotel-filter-title">Инфраструктура:</label>
+							<ul class="form-list">
+								<li class="form-item">
+									<input type="checkbox" name="pool" value="pool" id="pool" checked>
+									<label for="pool">Бассейн</label>
+								</li>
+								<li class="form-item">
+									<input type="checkbox" name="parking" value="parking" id="parking">
+									<label for="parking">Парковка</label>
+								</li>
+								<li class="form-item">
+									<input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
+									<label for="wi-fi">Wi-Fi</label>
+								</li>
+							</ul>						
 						</fieldset>
 						<fieldset class="hotel-filter-group">
-							<label class="hotel-filter-title">Тип жилья:
-								<ul class="form-list">
-									<li class="form-item"><input type="checkbox" name="shelter" value="hotel" checked>гостиница</li>
-									<li class="form-item"><input type="checkbox" name="shelter" value="motel" checked>мотель</li>
-									<li class="form-item"><input type="checkbox" name="shelter" value="apartaments" checked>аппартаменты</li>								
-								</ul>
-							</label>
+							<label class="hotel-filter-title">Тип жилья:</label>
+							<ul class="form-list">
+								<li class="form-item">
+									<input type="checkbox" name="hotel" value="hotel" id="hotel" checked>
+									<label for="hotel">гостиница</label>
+								</li>
+								<li class="form-item">
+									<input type="checkbox" name="motel" value="motel" id="motel" checked>
+									<label for="motel">мотель</label>
+								</li>
+								<li class="form-item">
+									<input type="checkbox" name="apartaments" value="apartaments" id="apartaments" checked>
+									<label for="apartaments">аппартаменты</label>
+								</li>								
+							</ul>					
 						</fieldset>
 						<fieldset class="hotel-filter-group">
-							<label for="slider" class="hotel-filter-title">Стоимость в сутки (р):<br>						
-								<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">
-							</label>
+							<label for="slider" class="hotel-filter-title">Стоимость в сутки (р):</label>			
+							<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">	
 						</fieldset>
 						<button type="submit">Показать</button>			
 					</form>
