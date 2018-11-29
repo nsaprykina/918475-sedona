@@ -21,7 +21,28 @@
 				<h1 class="visually-hidden">Бронирование отелей</h1>
 				<section class="hotel-filter">
 					<h2 class="visually-hidden">Сортировка</h2>
-					<!-- Здесь будет форма -->
+					<form method="post" action="">
+						<label>Инфраструктура:
+							<ul class="form-list">
+								<li class="form-item"><input type="checkbox" name="comfort" value="pool" checked>Бассейн</li>
+								<li class="form-item"><input type="checkbox" name="comfort" value="parking">Парковка</li>
+								<li class="form-item"><input type="checkbox" name="comfort" value="wi-fi">Wi-Fi</li>
+							</ul>
+						</label>
+						<label>Тип жилья:
+							<ul class="form-list">
+								<li class="form-item"><input type="checkbox" name="shelter" value="hotel" checked>гостиница</li>
+								<li class="form-item"><input type="checkbox" name="shelter" value="motel" checked>мотель</li>
+								<li class="form-item"><input type="checkbox" name="shelter" value="apartaments" checked>аппартаменты</li>								
+							</ul>
+						</label>
+						<label>Стоимость в сутки (р):
+							<!-- -->
+							<label for="slider">Регулятор</label>
+							<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">
+						</label>
+						<button type="submit">Показать</button>			
+					</form>
 				</section>
 				<div class="hotel-sort">
 					<h2 class="hotel-sort-title">Найдено: 3</h2>
@@ -30,7 +51,7 @@
 				<section class="hotels">
 					<ul class="hotels-list">
 						<li class="hotels-item">
-							<a class="hotels-item-image" href=""><img src="img\hotel.jpg" width="135" height="90" alt="Amara Resort & SPA"></a>
+							<a class="hotels-item-image" href="#"><img src="img\hotel.jpg" width="135" height="90" alt="Amara Resort & SPA"></a>
 							<div class="hotels-item-info">
 								<h3 class="hotels-item-title">Amara Resort & SPA</h3>
 								<p>гостиница</p>
@@ -45,7 +66,7 @@
 							</p>
 						</li>
 						<li class="hotels-item">
-							<a class="hotels-item-image"><img src="img\motel.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
+							<a class="hotels-item-image" href="#"><img src="img\motel.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
 							<div class="hotels-item-info">
 								<h3 class="hotels-item-title">Desert Quail Inn</h3>
 								<p>мотель</p>
@@ -60,7 +81,7 @@
 							</p>
 						</li>
 						<li class="hotels-item">
-							<a class="hotels-item-image"><img src="img\apartaments.jpg" width="135" height="90" altVillas at Poco Diabloa>
+							<a class="hotels-item-image" href="#"><img src="img\apartaments.jpg" width="135" height="90" alt="Villas at Poco Diabloa"></a>
 							<div class="hotels-item-info">
 								<h3 class="hotels-item-title">Villas at Poco Diablo</h3>
 								<p>аппартаменты</p>
