@@ -22,23 +22,29 @@
 				<section class="hotel-filter">
 					<h2 class="visually-hidden">Сортировка</h2>
 					<form class="hotel-filter-form" method="get" action="https://echo.htmlacademy.ru">
-						<label>Инфраструктура:
-							<ul class="form-list">
-								<li class="form-item"><input type="checkbox" name="comfort" value="pool" checked>Бассейн</li>
-								<li class="form-item"><input type="checkbox" name="comfort" value="parking">Парковка</li>
-								<li class="form-item"><input type="checkbox" name="comfort" value="wi-fi">Wi-Fi</li>
-							</ul>
-						</label>
-						<label>Тип жилья:
-							<ul class="form-list">
-								<li class="form-item"><input type="checkbox" name="shelter" value="hotel" checked>гостиница</li>
-								<li class="form-item"><input type="checkbox" name="shelter" value="motel" checked>мотель</li>
-								<li class="form-item"><input type="checkbox" name="shelter" value="apartaments" checked>аппартаменты</li>								
-							</ul>
-						</label>
-						<label for="slider">Стоимость в сутки (р):<br>						
-							<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">
-						</label>
+						<fieldset class="hotel-filter-group">
+							<label>Инфраструктура:
+								<ul class="form-list">
+									<li class="form-item"><input type="checkbox" name="comfort" value="pool" checked>Бассейн</li>
+									<li class="form-item"><input type="checkbox" name="comfort" value="parking">Парковка</li>
+									<li class="form-item"><input type="checkbox" name="comfort" value="wi-fi">Wi-Fi</li>
+								</ul>
+							</label>
+						</fieldset>
+						<fieldset class="hotel-filter-group">
+							<label>Тип жилья:
+								<ul class="form-list">
+									<li class="form-item"><input type="checkbox" name="shelter" value="hotel" checked>гостиница</li>
+									<li class="form-item"><input type="checkbox" name="shelter" value="motel" checked>мотель</li>
+									<li class="form-item"><input type="checkbox" name="shelter" value="apartaments" checked>аппартаменты</li>								
+								</ul>
+							</label>
+						</fieldset>
+						<fieldset class="hotel-filter-group">
+							<label for="slider">Стоимость в сутки (р):<br>						
+								<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">
+							</label>
+						</fieldset>
 						<button type="submit">Показать</button>			
 					</form>
 				</section>
