@@ -95,26 +95,28 @@
           				<a href="https://htmlacademy.ru/intensive/htmlcss">«Профессиональный HTML и CSS, уровень 1»</a>
 					</p>
           	</footer>
-          	<section class="modal">
-          		<form method="post" action="https://echo.htmlacademy.ru">
-          			<fieldset>
-          				<legend>Поиск гостиницы в Седоне</legend>
-          				<label>Дата заезда:<input type="date" name="date" value="2017_04_24"></label>
-          				<label>Дата выезда:<input type="date" name="date" value="2017_07_04"></label>
-          				<label>Взрослые: 
-          					<button class="minus">&minus;</button>
-								<input class="modal-number" value="2">
-							<button class="plus">&plus;</button>
-          				</label>
-          				<label>Дети:
-          					<button class="minus">&minus;</button>
-								<input class="modal-number" value="0">
-							<button class="plus">&plus;</button>
-          				</label>  
-          				<button type="submit">Найти</button>        				
-          			</fieldset>          			
+          	<div class="hotel-search-form">
+          		<form  method="post" action="https://echo.htmlacademy.ru">          			
+      				<legend>Поиск гостиницы в Седоне</legend>
+      				<p class="input-wrapper">
+      					<label>Дата заезда:<input type="date" name="date" value="2017_04_24"></label>
+      				</p>
+      				<p class="input-wrapper">
+      					<label>Дата выезда:<input type="date" name="date" value="2017_07_04"></label>
+      				</p>
+      				<label>Взрослые: 
+      					<button class="minus">&minus;</button>
+							<input class="modal-number" value="2">
+						<button class="plus">&plus;</button>
+      				</label>
+      				<label>Дети:
+      					<button class="minus">&minus;</button>
+							<input class="modal-number" value="0">
+						<button class="plus">&plus;</button>
+      				</label>  
+      				<button type="submit">Найти</button>     			          			
           		</form>
-          	</section>
+          	</div>
         </div>
     </body>
 </html>
