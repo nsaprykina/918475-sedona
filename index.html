@@ -101,8 +101,16 @@
           				<legend>Поиск гостиницы в Седоне</legend>
           				<label>Дата заезда:<input type="date" name="date" value="2017_04_24"></label>
           				<label>Дата выезда:<input type="date" name="date" value="2017_07_04"></label>
-          				<label>Взрослые: <!-- В этом месте реально незнаю что может быть, но знаю что оформление можно сделать через CSS--></label>
-          				<label>Дети: <!--  --></label>          				
+          				<label>Взрослые: 
+          					<button class="minus">&minus;</button>
+								<input class="modal-number" value="2">
+							<button class="plus">&plus;</button>
+          				</label>
+          				<label>Дети:
+          					<button class="minus">&minus;</button>
+								<input class="modal-number" value="0">
+							<button class="plus">&plus;</button>
+          				</label>          				
           			</fieldset>
           			<button type="submit">Найти</button>
           		</form>
