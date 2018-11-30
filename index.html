@@ -108,16 +108,18 @@
       					<input type="date" name="date" value="4 июля 2017">
       					<button class="calendar-btn"></button>      					
       				</p>
-      				<label>Взрослые: 
+      				<p class="input-half-wrap">
+	      				<label for="adult-nub">Взрослые:</label> 
       					<button class="minus">&minus;</button>
-							<input class="modal-number" value="2">
+						<input class="modal-number" value="2" id="adult-nub">						
 						<button class="plus">&plus;</button>
-      				</label>
-      				<label>Дети:
-      					<button class="minus">&minus;</button>
-							<input class="modal-number" value="0">
+					</p>	      				
+      				<p class="input-half-wrap">
+						<label for="kids-num">Дети:</label>
+						<button class="minus">&minus;</button>
+						<input class="modal-number" value="0" id="kids-num">
 						<button class="plus">&plus;</button>
-      				</label>  
+					</p>
       				<button type="submit">Найти</button>     			          			
           		</form>
           	</div>
