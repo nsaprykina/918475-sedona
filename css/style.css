@@ -14,3 +14,11 @@ body {
 a {
 	text-decoration: none;
 }
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	border-color: #ffffff;
+}
