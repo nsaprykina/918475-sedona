@@ -22,3 +22,7 @@ a {
 
 	background-color: #ffffff;
 }
+
+.site-navigation {
+	list-style: none;
+}
