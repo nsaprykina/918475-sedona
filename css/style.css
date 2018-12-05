@@ -157,14 +157,12 @@ a {
 	line-height: 26px;
 }
 
-.social-link-tw {
+.social-link {
 	background-color: #81b3d2;
-	background-image: url(../img/twitter.svg);
-	background-repeat: no-repeat;
 }
 
-.social-link-tw:hover,
-.social-link-tw:focus {
+.social-link:hover,
+.social-link:focus {
 	background-color: #669ec0;
 }
 
@@ -173,26 +171,21 @@ a {
 	background-color: 	
 }
 
-.social-link-fb {
-	background-color: #81b3d2;
+.social-link-tw {	
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+}
+
+
+
+.social-link-fb {	
 	background-image: url(../img/fb-icon.svg);
 	background-repeat: no-repeat;
 }
 
-.social-link-fb:hover,
-.social-link-fb:focus {
-	background-color: #669ec0;
-}
-
-.social-link-yt {
-	background-color: #81b3d2;
+.social-link-yt {	
 	background-image: url(../img/youtube.svg);
 	background-repeat: no-repeat;
-}
-
-.social-link-yt:hover,
-.social-link-yt:focus {
-	background-color: #669ec0;
 }
 
 .social-list {
