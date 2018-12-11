@@ -8,7 +8,7 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 }
 
 a {
@@ -267,4 +267,33 @@ label {
 .btn-dark:hover,
 .btn-dark:focus {
 	background-color: #604e43;
+}
+
+/* сеточные стили */
+.page-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-navigation li {
+	width: 240px;
+	display: inline-block;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.features-item-text {
+	width: 400px;
+	height: 252px;
 }
