@@ -1,10 +1,18 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before,
+*::after {
+ box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
+	line-height: 26px;	
 	color: #000000;
 	text-transform: uppercase;
 
@@ -15,30 +23,58 @@ a {
 	text-decoration: none;
 }
 
-.btn {
-	font-size: 14px;
+.btn {	
 	line-height: 21px;
 	color: #ffffff;
 	background-color: #81b3d2;
 }
 
 .page-wrapper {
-	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 0 0 15px 0 rbga(0, 0, 0, 0.3);
+	text-align: center;	
 }
 
 .main-navigation {
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;	
 }
 
-.site-navigation {
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main-navigation li {
+
+	width: 20%;
+	text-align: left;
+}
+
+.main-navigation li:nth-of-type(3),
+.main-navigation li:nth-of-type(4) {
+	text-align: right;
+}
+
+.main-navigation li:nth-of-type(2) {
+	margin-right: 20%;
+	padding: 15px 0;
+}
+
+.site-navigation {	
+	margin: 0;
+	padding: 0 72px;
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .site-navigation a {
 	color: #000000;
+	font-weight: 700;
 }
 
 .site-navigation a:hover,
@@ -48,70 +84,136 @@ a {
 
 .welcome {	
 	background-image: url(../img/welcom-bg.jpg);	
-	background-size: cover;	
+	background-size: cover;
+	min-height: 450px;
+	padding: 76px 0 79px;
 }
 
 .intro {
-	margin: 0;
 }
 
-.intro .page-title {
+.page-title {
 	font-size: 21px;
-	line-height: 26px;
+	margin: 61px 0 21px;	
 }
 
 .intro p {
-	font-size: 14px;
-	line-height: 26px;
+	margin: 20px 0 49px;
 }
 
 .features-list {
-	list-style: none;	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	counter-reset: features;
+}
+
+.features-item {	
+	width: 100%;
+	display: flex;
 }
 
 .features-item-blue {
 	background-color: #81b3d2;
 }
 
+.features-item-full {
+	width: 100%;	
+}
+
+.features-item-full:first-of-type {
+	order: -2;
+}
+
+.features-item-text {
+	width: 400px;
+	padding: 35px 0 20px;
+}
+
 .features-title {
-    font-size: 21px;
-	line-height: 21px;
-    font-weight: 700;
-}
-
-.features-item-blue .features-title {
 	color: #ffffff;
+    font-size: 21px;
+	line-height: 120%;
+    font-weight: 700;
+    padding: 0 100px;
+    margin: 0 0 10px;    
 }
 
-.features-item p {
+.features-title::after {
+	margin-top: 10px;
+	display: block;
+	font-weight: 400;
 	font-size: 14px;
+	counter-increment: features;
+	content: "- № " counter(features) " -"
+}
+
+.features-item p {	
 	line-height: 21px;	
 }
 
 .features-item-blue p {
 	color: #ffffff;
+	padding: 0 80px;
+	margin: 10px 0;
 }
 
 .features-item-grey {
 	background-color: #eeeeee;
+	color: #000000;
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.features-item-grey .features-title {
+	color: #000000;
+	padding: 0 120px;
+	margin: 20px 0 10px;
+}
+
+.features-item-grey p {
+	padding: 0 75px;
+	margin: 0 0 40px;
+}
+
+.features-item-haslist {
+	order: -1;
 }
 
 .features-sublist {
 	list-style: none;
+    width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.features-item-sub {
+	width: 400px;
+	margin: 10px 0 80px;
+	padding: 0 55px;
 }
 
 .search {
-	background-color: #ffffff;	
+	padding: 0 72px;
+	margin: 0;	
 }
 
 .search-title {
 	font-size: 30px;
 	line-height: 36px;
+	padding: 0;
+	margin: 50px 0 20px;
 }
 
 .search p {
-	font-size: 14px;
 	line-height: 24px;
+	padding: 0;
+	margin: 10px 0 60px;
 }
 
 .search-btn {
@@ -119,6 +221,9 @@ a {
 	line-height: 26px;
 	color: #ffffff;
 	background-color: #766357;
+	padding: 31px 139px 30px 140px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .search-btn:hover,
@@ -132,6 +237,88 @@ a {
 	background-color: #503e33;
 }
 
+.map {
+	width: 100%;
+	height: 480px;
+}
+
+footer.page-footer.index-footer {
+	position: relative;
+}
+
+.hotel-search-wrapper {
+	width: 480px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -240px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input-wrapper {
+	margin: 0 0 20px;
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
+.input-wrapper input {
+	flex-grow: 1;
+	margin-left: 20px;
+	box-shadow: inset 0 0 0 2px #f2f2f2;	
+}
+
+.input-wrapper input:hover {
+	border: 2px solid #f2f2f2;
+}
+
+.calendar-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 24px;
+	background: transparent;
+	border: 2px solid ;
+}
+
+p.input-half-wrap {
+	width: 50%;
+}
+
+.footer-wrapper {
+	display: flex;
+	padding: 20px 72px;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+
+.social-list {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #81b3d2;
+	margin: 0;
+	position: 0;
+	width: 205px;
+	flex-wrap: wrap;
+}
+
+.social-list li:not(:nth-of-type(3n)) {
+	margin-right: 20px;
+}
+
+.footer-copyright a{
+	font-size: 0;
+}
+
+/*---------    ------------*/
 .data {
 	font-size: 14px;
 	line-height: 26px;
@@ -158,7 +345,7 @@ a {
 }
 
 .social-link {
-	background-color: #81b3d2;
+	
 }
 
 .social-link:hover,
@@ -205,6 +392,33 @@ a {
 .hotel-filter-list,
 .hotels-list {
 	list-style: none;
+}
+
+.hotels-list {
+	margin: 0;
+	position: 0 72px;
+}
+
+.hotels-item {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotels-item-image {
+	margin: 20px;
+}
+
+.hotels-item-info {
+	margin: 10px;
+	text-align: left;
+}
+
+.hotel-item-rating {
+	margin: 0;
+	padding: 10px;
+	 text-align: right;
 }
 
 .hotel-filter {
@@ -267,33 +481,4 @@ label {
 .btn-dark:hover,
 .btn-dark:focus {
 	background-color: #604e43;
-}
-
-/* сеточные стили */
-.page-wrapper {
-	width: 1200px;
-	margin: 0 auto;
-	background-color: #ffffff;
-}
-
-.main-navigation {
-	display: flex;
-	flex-direction: row;
-}
-
-.main-navigation li {
-	width: 240px;
-	display: inline-block;
-}
-
-.logo {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.features-item-text {
-	width: 400px;
-	height: 252px;
 }
