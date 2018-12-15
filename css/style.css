@@ -388,8 +388,6 @@ p.input-half-wrap {
 	padding: 0;
 }
 
-
-
 .social-link-fb {	
 	background-image: url(../img/fb-icon.svg);
 	background-repeat: no-repeat;
@@ -464,6 +462,14 @@ p.input-half-wrap {
 	margin: 0;
 	padding: 0;
 }
+
+.hotel-filter-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
 
 .hotel-filter-title {
 	font-size: 16px;
