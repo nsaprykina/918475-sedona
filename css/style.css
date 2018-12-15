@@ -34,7 +34,6 @@ a {
 .page-wrapper {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0;
 	background-color: #ffffff;
 	box-shadow: 0 0 15px 0 rbga(0, 0, 0, 0.3);
 	text-align: center;	
@@ -47,11 +46,11 @@ a {
 	transform: translateX(-50%);
 }
 
+.main-navigation
+
 .main-navigation li {
 	width: 20%;
 	text-align: left;
-	margin: 0;
-	padding: 0;
 }
 
 .main-navigation li:nth-of-type(3),
@@ -61,13 +60,12 @@ a {
 
 .main-navigation li:nth-of-type(2) {
 	margin-right: 20%;
-	margin: 0;
-	padding: 0;
+	padding: 15px 0;
 }
 
 .site-navigation {	
 	margin: 0;
-	padding: 0;
+	padding: 0 72px;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -468,6 +466,10 @@ p.input-half-wrap {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+}
+
+.hotel-filter-group {
+	border: 0;
 }
 
 
