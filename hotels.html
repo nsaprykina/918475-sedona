@@ -59,16 +59,25 @@
 								</li>								
 							</ul>					
 						</fieldset>
-						<fieldset class="hotel-filter-group">
+						<fieldset class="hotel-filter-cost">
 							<legend for="slider" class="hotel-filter-title">Стоимость в сутки (р):</legend>			
-							<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">	
-						</fieldset>
-						<button class="hotel-filter-btn" type="submit">Показать</button>			
+							<input type="range" min="0" max="50" name="range" value="0" step="2" id="slider">
+							<button class="hotel-filter-btn" type="submit">Показать</button>
+						</fieldset>									
 					</form>
 				</section>
 				<div class="hotel-sort">
-					<h2 class="hotel-sort-title">Найдено: 3</h2>
-					<!-- Здесь будет форма -->
+				<h2 class="hotel-sort-title">Найдено: 3</h2>
+					<p class="sort-caption">Сортировка</p>
+					<ul class="sort-list">
+						<li class="sort-item"><a class="btn-blue" href="#">По цене</a></li>
+						<li class="sort-item"><a class="btn-black" href="#">По типу</a></li>
+						<li class="sort-item"><a  class="btn-black" href="#">По рейтингу</a></li>
+					</ul>
+					<div class="sort-arrows">
+						<a class="arrows arrows-down action" aria-label="По взрастанию"></a>
+						<a class="arrows arrows-up" aria-label="По убыванию"></a>
+					</div>						
 				</div> 
 				<section class="hotels">
 					<ul class="hotels-list">
@@ -81,11 +90,11 @@
 								<a class="btn" href="#">Подробнее</a>
 								<a class="btn btn-dark" href="#">Забронировать</a>
 							</div>
-							<p class="hotel-item-rating">
+							<div class="hotels-item-rating">
 								<span class="hotel-item-stars">
 								</span>
-								рейтинг: 8,5
-							</p>
+								<p>рейтинг: 8,5</p>
+							</div>
 						</li>
 						<li class="hotels-item">
 							<a class="hotels-item-image" href="#"><img src="img\motel.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
@@ -96,11 +105,11 @@
 								<a class="btn" href="#">Подробнее</a>
 								<a class="btn btn-dark" href="#">Забронировать</a>
 							</div>
-							<p class="hotel-item-rating">
+							<div class="hotels-item-rating">
 								<span class="hotel-item-stars">
 								</span>
-								рейтинг: 8,9
-							</p>
+								<p>рейтинг: 8,9</p>
+							</div>
 						</li>
 						<li class="hotels-item">
 							<a class="hotels-item-image" href="#"><img src="img\apartaments.jpg" width="135" height="90" alt="Villas at Poco Diabloa"></a>
@@ -111,11 +120,11 @@
 								<a class="btn" href="#">Подробнее</a>
 								<a class="btn btn-dark" href="#">Забронировать</a>
 							</div>
-							<p class="hotel-item-rating">
+							<div class="hotels-item-rating">
 								<span class="hotel-item-stars">
 								</span>
-								рейтинг: 9,2
-							</p>
+								<p>рейтинг: 9,2</p>
+							</div>
 						</li>
 					</ul>
 				</section>
@@ -125,9 +134,9 @@
 					<p class="hashtag">#visitsedona</p>
 					<div class="footer-social">
 	        			<ul class="social-list">
-	        				<li><a class="social-link social-link-tw" href="#">Твитер</a></li>
-	        				<li><a class="social-link social-link-fb" href="#">Фейсбук</a></li>
-	          				<li><a class="social-link social-link-yt" href="#">Ютуб</a></li>
+	        				<li><a class="social-link social-link-tw" href="#"><span class="visually-hidden">Твитер</span>/</a></li>
+	    					<li><a class="social-link social-link-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+	      					<li><a class="social-link social-link-yt" href="#"><span class="visually-hidden">Ютуб</span></a></li>
 	          			</ul>
 	          		</div>
 	          		<p class="footer-copyright">
