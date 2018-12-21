@@ -32,7 +32,14 @@ a {
 }
 
 .visually-hidden {
-	visibility: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .page-wrapper {
@@ -446,6 +453,8 @@ p.input-half-wrap {
 .hotel-filter-list,
 .hotels-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .hotel-item-rating {
@@ -501,7 +510,7 @@ h2.visually-hidden {
 .hotel-filter-form {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 29px 72px 4px;
+	padding: 27px 72px 8px;
 	text-align: left;
 }
 
@@ -512,20 +521,18 @@ padding: 0;
 width: 250px;
 }
 
+.hotel-filter-group input {
+	display: none;
+}
+
 .hotel-filter-title {
 font-size: 16px;
 line-height: 21px;
 color: #ffffff;
-margin: 0;
+margin-bottom: -1px;
 padding: 0;
 font-weight: 700;
-}
 
-.hotel-filter-cost {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	margin-left: auto;
 }
 
 label {
@@ -537,8 +544,122 @@ label {
 	margin: 26px 0;
 }
 
-input {
-	display: none;
+/*----- Стоимость в сутки: -----*/
+.hotel-filter-cost {
+	padding: 0;
+	margin-left: auto;
+	border: 0;	
+	width: 330px;
+	
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.filter-cost-title {
+	margin-bottom: 12px;
+	font-weight: 600;
+	font-size: 16px;
+    line-height: 21px;
+}
+
+.prise-controls {
+	position: relative;
+	height: 35px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 0;
+}
+
+.prise-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.prise-controls .min-prise,
+.prise-controls .max-prise {	
+	padding: 0 4px 0 68px;
+}
+
+.prise-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+}
+
+.prise-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 3px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.range-control {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -7px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.hotel-filter-btn {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 /*----- Сортировка -----*/
@@ -603,28 +724,28 @@ input {
 /*-----список отелей-----*/
 .hotels-list {
 	margin: 0;
-	padding: 14px 40px;
+	padding: 0px;
 	list-style: none;
 }
 
 .hotels-item {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 17px 33px;
+	padding: 22px 72px;
 	border-bottom: 1px solid red;
 }
 
 .hotels-item-image {
-	margin-right: 30px;
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .hotels-item-info {
 	text-align: left;
-	margin-left: 20px;
+	margin: 0 30px;
 	display: flex;
 	flex-wrap: wrap;
 	width: 239px;
+	align-items: center;
 }
 
 .hotels-item-title {
