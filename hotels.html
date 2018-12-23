@@ -29,15 +29,15 @@
 							<legend class="hotel-filter-title">Инфраструктура:</legend>
 							<ul class="hotel-filter-list">
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="pool" value="pool" id="pool" checked>
+									<input class="hotel-filter-input" type="checkbox" name="pool" value="pool" id="pool" checked>
 									<label for="pool">Бассейн</label>
 								</li>
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="parking" value="parking" id="parking">
+									<input class="hotel-filter-input" type="checkbox" name="parking" value="parking" id="parking">
 									<label for="parking">Парковка</label>
 								</li>
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
+									<input class="hotel-filter-input" type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
 									<label for="wi-fi">Wi-Fi</label>
 								</li>
 							</ul>						
@@ -46,15 +46,15 @@
 							<legend class="hotel-filter-title">Тип жилья:</legend>
 							<ul class="hotel-filter-list">
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="hotel" value="hotel" id="hotel" checked>
+									<input class="hotel-filter-input" type="checkbox" name="hotel" value="hotel" id="hotel" checked>
 									<label for="hotel">Гостиница</label>
 								</li>
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="motel" value="motel" id="motel" checked>
+									<input class="hotel-filter-input" type="checkbox" name="motel" value="motel" id="motel" checked>
 									<label for="motel">Мотель</label>
 								</li>
 								<li class="hotel-filter-item">
-									<input type="checkbox" name="apartaments" value="apartaments" id="apartaments" checked>
+									<input class="hotel-filter-input" type="checkbox" name="apartaments" value="apartaments" id="apartaments" checked>
 									<label for="apartaments">Аппартаменты</label>
 								</li>								
 							</ul>					
@@ -141,17 +141,18 @@
 			</main>
 			<footer class="page-footer">
 				<div class="footer-wrapper">
-					<p class="hashtag">#visitsedona</p>
-					<div class="footer-social">
-	        			<ul class="social-list">
-	        				<li><a class="social-link social-link-tw" href="#"><span class="visually-hidden">Твитер</span>/</a></li>
-	    					<li><a class="social-link social-link-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-	      					<li><a class="social-link social-link-yt" href="#"><span class="visually-hidden">Ютуб</span></a></li>
-	          			</ul>
-	          		</div>
+					<p class="hashtag">#visitsedona</p>					
+        			<ul class="social-list">
+        				<li><a class="social-link social-link-tw" href="#"><span class="visually-hidden">Твитер</span></a></li>
+    					<li><a class="social-link social-link-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      					<li><a class="social-link social-link-yt" href="#"><span class="visually-hidden">Ютуб</span></a></li>
+          			</ul>	          		
 	          		<p class="footer-copyright">
 	          			website by
-	          			<a href="https://htmlacademy.ru/intensive/htmlcss">«Профессиональный HTML и CSS, уровень 1»</a>
+	          			<a href="https://htmlacademy.ru/intensive/htmlcss">
+	          				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo-name">
+	          				<span class="visually-hidden">«Профессиональный HTML и CSS, уровень»</span>
+	          			</a>
 	          		</p>
 	          	</div>
           	</footer>
