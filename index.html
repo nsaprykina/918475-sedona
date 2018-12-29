@@ -90,34 +90,38 @@
 		      		<form method="post" action="https://echo.htmlacademy.ru">
 
 		  				<p class="input-wrapper">
-		  					<label for="checkin">Дата заезда:</label>
+		  					<label class="entry" for="checkin">Дата заезда:</label>
 		  					<input type="text" id="checkin" name="calendar" value="24 апреля 2017">
-		  					<button class="calendar-btn"></button>
+		  					<button type="button" class="calendar-btn">
+		  						<span class="visually-hidden">Календарь</span>
+		  					</button>
 		  				</p>
 		  				<p class="input-wrapper">
-		  					<label for="checkon">Дата выезда:</label>
+		  					<label class="departure" for="checkon">Дата выезда:</label>
 		  					<input type="text" id="checkon" name="date" value="4 июля 2017">
-		  					<button class="calendar-btn"></button>      					
+		  					<button type="button" class="calendar-btn">
+		  						<span class="visually-hidden">Календарь</span>
+		  					</button>      					
 		  				</p>
 		  				<p class="input-half-wrap">
 		      				<label class="adult" for="adult-nub">Взрослые:</label> 
-		  					<button class="minus">&minus;</button>
+		  					<button type="button" class="minus">&minus;</button>
 							<input value="2" id="adult-nub">						
-							<button class="plus">&plus;</button>
+							<button type="button" class="plus">&plus;</button>
 						</p>	      				
 		  				<p class="input-half-wrap">
 							<label class="kids" for="kids-num">Дети:</label>
-							<button class="minus">&minus;</button>
+							<button type="button" class="minus">&minus;</button>
 							<input value="0" id="kids-num">
-							<button class="plus">&plus;</button>
+							<button type="button" class="plus">&plus;</button>
 						</p>
-		  				<button class="hotel-search-btn" type="submit">Найти</button>     			          			
+		  				<button class="hotel-search-btn" type="submit">Найти</button> 			          			
 		      		</form>
 	      	    </div>
 				<div class="map">
 					<img src="img/map-index.jpg" width="1200" height="592" alt="Карта Седоны">
 				</div>
-				<div class="footer-wrapper">
+				<div class="footer-wrapper-index">
 					<p class="hashtag">#visitsedona</p>
 						<ul class="social-list">
 		    				<li><a class="social-link social-link-tw" href="#"><span class="visually-hidden">Твитер</span></a></li>
@@ -125,7 +129,7 @@
 		      				<li><a class="social-link social-link-yt" href="#"><span class="visually-hidden">Ютуб</span></a></li>
 		      			</ul>	      		
 					<p class="footer-copyright">
-		  				website by
+		  				<span>website by</span>
 		  				<a href="https://htmlacademy.ru/intensive/htmlcss">
 		  					<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo-name">
 		  					<span class="visually-hidden">«Профессиональный HTML и CSS, уровень 1»</span>
