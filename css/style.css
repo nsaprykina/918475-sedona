@@ -86,7 +86,7 @@ a {
 
 .main-navigation li:nth-of-type(2) {
 	margin-right: 20%;
-	padding: 15px 0;
+	padding: 15px 0;	
 }
 
 .site-navigation a {
@@ -614,9 +614,21 @@ input:hover {
 	justify-content: center;
 }
 
-.footer-copyright a{
-	font-size: 0;
+.footer-copyright a {
 	display: block;
+}
+
+.footer-button {
+	margin-left: 8px;
+	padding-top: 7px;
+}
+
+.footer-button:hover svg {
+	fill: #81b3d2;
+}
+
+.footer-button:active svg {
+	fill: #bdbbbc;
 }
 
 .footer-copyright img {
@@ -702,56 +714,6 @@ input[type="checkbox"]:checked+label:after {
 	left: 0;
 	top: 0;
 	transition: all 0.2s ease;
-}
-
-/*
-.hotel-filter {
-	background-image: url(../img/hotel-filter-bg.jpg);	
-	background-size: cover;
-}
-
-.hotel-filter-form {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 27px 72px 8px;
-	text-align: left;
-}
-
-.hotel-filter-group {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	width: 250px;
-}
-
-.hotel-filter-title {
-	font-size: 16px;
-	line-height: 21px;
-	color: #ffffff;
-	margin-bottom: -1px;
-	padding: 0;
-	font-weight: 700;
-}
-
-.hotel-filter-list {
-	list-style: none;
-}
-
-.hotel-filter-item {
-
-}
-
-.hotel-filter-input {
-	display: none;
-}
-
-.hotel-filter-item label {
-	font-size: 14px;
-	line-height: 21px;
-	display: block;
-	padding-left: 40px;
-	color: #ffffff;
-	margin: 26px 0;
 }
 
 /*----- Стоимость в сутки: -----*/
@@ -993,7 +955,7 @@ input[type="checkbox"]:checked+label:after {
 .hotels-item {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 22px 72px;
+	padding: 23px 72px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1054,7 +1016,27 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .hotels-item-rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin-left: auto;
+}
+
+.hotel-item-stars {
+	width: 87px;
+	height: 20px;
+	margin-left: auto;
+	margin-bottom: 44px;
+	background-image: url(../img/star.svg);
+	background-repeat: space;
+}
+
+.item-stars-motel {
+	width: 64px;
+}
+
+.item-stars-apartaments {
+	width: 40px;
 }
 
 .hotels-item-rating p {
