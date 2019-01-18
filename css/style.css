@@ -27,7 +27,7 @@ a {
 	color: #ffffff;
 	font-weight: 700;
 	background-color: #81b3d2;
-	padding: 5px 17px;
+	padding: 3px 17px;
 	margin-right: 4px;
 	display: inline-block;
 	vertical-align: top;
@@ -136,12 +136,12 @@ a {
 }
 
 .intro {
-	padding: 50px 20px 40px;
+	padding: 49px 20px 38px;
 }
 
 .page-title {
 	font-size: 21px;
-	margin: 10px auto 30px;	
+	margin: 10px auto 28px;	
 	width: 615px;
 }
 
@@ -199,7 +199,7 @@ a {
     font-size: 21px;
 	line-height: 110%;
     font-weight: 700;
-    margin: 10px auto;
+    margin: 9px auto;
     width: 210px; 
 }
 
@@ -236,7 +236,7 @@ a {
 .features-item-grey .features-title {
 	color: #000000;
 	padding: 0;
-	margin: 10px auto 0;
+	margin: 9px auto 0;
 	width: 118px
 }
 
@@ -317,7 +317,7 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 	padding: 0;
-	margin: 10px auto 25px;
+	margin: 9px auto 25px;
 	width: 300px;
 }
 
@@ -365,7 +365,7 @@ a {
 	left: 50%;
 	width: 568px;
 	margin-left: -284px;
-	padding: 55px 55px;
+	padding: 54px 55px;
 	font-size: 14px;
 	font-weight: bold;
 	text-align: left;
@@ -381,8 +381,6 @@ a {
 
 @keyframes bounce{
 	0% {transform: translateX(300px);}	
-	70% {transform: translateX(200px);}
-	90% {transform: translateX(100px);}
 	100% {transform: translateX(0);}
 }
 
@@ -693,7 +691,7 @@ h2.visually-hidden {
 }
 
 .hotel-filter-group {
-	width: 256px;
+	width: 254px;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -715,7 +713,7 @@ h2.visually-hidden {
 .hotel-filter-item {
 	position: relative;
 	display: block;
-	padding-left: 40px;
+	padding-left: 41px;
 	margin-bottom: 25px;
 	font-size: 14px;
 	cursor: pointer;
@@ -751,19 +749,27 @@ input[type="checkbox"]:checked+label:after {
 	cursor: pointer;
 }
 
+input:disabled ~ label:before {
+	opacity: 0.3;
+}
+
+.input-checked:disabled ~ label:after {
+	opacity: 0.3;
+}
+
 /*----- Стоимость в сутки: -----*/
 .hotel-filter-cost {
 	padding: 0;
 	margin-left: auto;
 	border: 0;	
-	width: 330px;
+	width: 315px;
 	
 	color: #ffffff;
 	text-transform: uppercase;
 }
 
 .filter-cost-title {
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	font-weight: 600;
 	font-size: 16px;
     line-height: 21px;
@@ -790,7 +796,7 @@ input[type="checkbox"]:checked+label:after {
 
 .prise-controls .min-prise,
 .prise-controls .max-prise {	
-	padding: 0 4px 0 68px;
+	padding: 0 13px 0 64px;
 }
 
 .prise-controls input {
@@ -816,7 +822,7 @@ input[type="checkbox"]:checked+label:after {
 
 .range-control {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .scale {
@@ -859,7 +865,7 @@ input[type="checkbox"]:checked+label:after {
 .hotel-filter-btn {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
+	padding: 6px 30px;
 
 	font-size: 14px;
 	line-height: 20px;
@@ -891,7 +897,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .hotel-sort {
-	padding: 12px 72px;
+	padding: 11px 72px;
 }
 
 .sort-list {
@@ -955,6 +961,7 @@ input[type="checkbox"]:checked+label:after {
 	border-right-color: transparent;
 	border-left-width: 5px;
 	border-left-color: transparent;
+	cursor: pointer;
 }
 
 .arrows-up {
@@ -991,12 +998,12 @@ input[type="checkbox"]:checked+label:after {
 .hotels-item {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 23px 72px;
+	padding: 25px 72px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-item-image {
-	padding-top: 7px;
+	padding-top: 2px;
 }
 
 .hotels-item-info {
@@ -1033,8 +1040,12 @@ input[type="checkbox"]:checked+label:after {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-	margin: 0;
-	width: 50%;
+	margin: 2px 0 10px;	
+	width: 42%;
+}
+
+.cost {
+	margin-left: 0px;
 }
 
 .btn:hover,
@@ -1048,7 +1059,7 @@ input[type="checkbox"]:checked+label:after {
 
 .btn-dark {
 	background-color: #766357;
-	margin-left: 10px;	
+	margin-left: 3px;	
 }
 
 .btn-dark:hover,
@@ -1067,6 +1078,7 @@ input[type="checkbox"]:checked+label:after {
 	width: 87px;
 	height: 20px;
 	margin-left: auto;
+	margin-top: 3px;
 	margin-bottom: 44px;
 	background-image: url(../img/star.svg);
 	background-repeat: space;
@@ -1085,4 +1097,5 @@ input[type="checkbox"]:checked+label:after {
 	background-color: #f2f2f2;
 	padding: 0 14px;
 	margin: 0;
+	margin-bottom: 6px;
 }
