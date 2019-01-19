@@ -12,8 +12,6 @@ var isStorageSupport=true;
 adult.value = localStorage.getItem("adult");
 kids.value = localStorage.getItem("kids");
 
-popup.classList.add("search-wrapper-show");
-
 btn.addEventListener("click", function (evt) {
 	evt.preventDefault();				
 	popup.classList.toggle("search-wrapper-show");
