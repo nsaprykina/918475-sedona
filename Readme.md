@@ -3,6 +3,8 @@
 * Студент: [Надежда Сапрыкина](https://up.htmlacademy.ru/htmlcss/23/user/918475).
 * Наставник: [Сергей Кравченко](https://htmlacademy.ru/profile/id13921).
 
+GIT HUB PAGE: https://nsaprykina.github.io/918475-sedona/
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
